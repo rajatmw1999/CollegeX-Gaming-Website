@@ -40,12 +40,142 @@ src:url(../fonts/BlackOpsOne-Regular.ttf);
 
 
 body{
+padding: 0%;
 width:100%;
 text-align:center;
-font-family: "Abel-Regular";
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.navbar-default {
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 0;
+    margin-left: 2px;
+}
+
+@media (min-width: 770px){
+    .navbar-expand-custom {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .navbar-expand-custom .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-expand-custom .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .navbar-expand-custom .navbar-collapse {
+        display: flex!important;
+    }
+    .navbar-expand-custom .navbar-toggler {
+        display: none;
+    }
+}
+
+nav {
+    height: 50px;
+}
+.fixed-top{
+    padding-top: 1%;
+}
+
+nav ul {
+    margin-left: 15px;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+nav li a {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    
+    
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 12px;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-left: -2%;
+    margin-right: 4%;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+@media (max-width: 765px){
+.navbar-collapse{
+    background-color: black;
+}}
+
+@media screen and (max-width: 1005px) and (min-width: 769px) {
+    .social-buttons{
+        display: none;
+    }
+}
+
+
+/* .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: -3%;
+    margin-right: 3%;
+} */
+
+/* .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: -15%;
+    margin-left: -2%;
+} */
+
+
+
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.navbar-nav {
+    margin: 7.5px -15px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: white;
+}
+
+.whiteiconcolor {color:white;}
+
+.btn-social-icon>:first-child {
+    color: white;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    width: 100%!important;
+    margin: 20px;
+}
+
+
+
+.navbar-youplay .container .navbar-right {
+    margin-right: 0;
+}
+
+
+
+
+
+
+/* .navbar-default {
 background-color: #0C0808;
 border: none;
 }
@@ -59,38 +189,104 @@ text-decoration: none;
 
 .navbar-inverse .navbar-nav>li>a:hover {
 color:yellow;
-}
+} */
 
-.banner{
-background:url("../images/bg.jpg" ) 0px 0px no-repeat;
-width:100%;
-height:800px;
-background-size:cover;
-}
 
-.banner-content{
-width:570px;
-padding-top:200px;
-text-align:left;
+
+/* .banner-content{
+width:800px;
+padding-top:100px;
+padding-bottom: 180px;
+padding-left: 250px;
+text-align:center;
 color:#fff;
 }
 
 .banner-content h1{
-font-family: "BlackOpsOne-Regular";
 font-size:60px;
 }
 
 .banner-content h2{
-font-family: "Abel-Regular";
 font-size:32px;
 }
 
 .banner-content p{
-font-family: "Abel-Regular";
 font-size:20px;
 padding-top:15px;
 line-height:30px;
+} */
+.carousel-inner .item{
+    height: 100%;
 }
+.carousel-inner .item img {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.carousel-inner .item img {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1680px){
+.banner-content {
+    width:70%;
+}}
+
+
+.carousel-content {
+    position: absolute;
+    top: 11%;
+    bottom: 20%;
+    left: 18%;
+    right: 20%;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+@media screen and (max-width: 1543px){
+.banner-content {
+    padding-top: 22%;
+}}
+
+.carousel-content h1{
+    font-size:60px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+.carousel-content h3{
+    color: yellow;
+    font-weight: 600;
+}
+
+.banner-content p{
+    font-size:17px;
+    padding-top:15px;
+    line-height:19px;
+    padding-bottom:15px;
+} 
+
+
+
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+
 
 /* ----------Header Ends Here ---------- */
 
