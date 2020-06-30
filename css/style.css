@@ -47,10 +47,18 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 }
 
 
-.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+
+#home{
+    background-color: black;
+    font-family: "Abel-Regular";
+    color: white;
+}
+
+
+/* .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
     margin-right: 0;
     margin-left: 2px;
-}
+} */
 
 @media (min-width: 770px){
     .navbar-expand-custom {
@@ -76,8 +84,9 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 nav {
     height: 50px;
 }
+
 .fixed-top{
-    padding-top: 1%;
+    padding-top: 0.5%;
 }
 
 nav ul {
@@ -111,7 +120,20 @@ nav li a {
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
+    max-width: 60%;
 }
+
+.navbar-brand img {
+    width: 60%;
+    height: 120%;
+    max-width: 70%;
+}
+
+@media (max-width: 800px){
+.navbar-brand img {
+    width: 60%;
+    height: 120%;
+}}
 
 @media (max-width: 765px){
 .navbar-collapse{
@@ -123,18 +145,6 @@ nav li a {
         display: none;
     }
 }
-
-
-/* .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    margin-left: -3%;
-    margin-right: 3%;
-} */
-
-/* .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
-    margin-right: -15%;
-    margin-left: -2%;
-} */
-
 
 
 
@@ -170,112 +180,114 @@ nav li a {
     margin-right: 0;
 }
 
-
-
-
-
-
-/* .navbar-default {
-background-color: #0C0808;
-border: none;
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.navbar-inverse .navbar-nav>li>a {
-color: #fff;
-font-size:18px;
-padding-top: 22px;
-text-decoration: none;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover {
-color:yellow;
-} */
 
 
 
-/* .banner-content{
-width:800px;
-padding-top:100px;
-padding-bottom: 180px;
-padding-left: 250px;
-text-align:center;
-color:#fff;
-}
 
-.banner-content h1{
-font-size:60px;
-}
 
-.banner-content h2{
-font-size:32px;
-}
 
-.banner-content p{
-font-size:20px;
-padding-top:15px;
-line-height:30px;
-} */
-.carousel-inner .item{
+#carouselExampleIndicators .carousel-inner .item{
     height: 100%;
 }
-.carousel-inner .item img {
+
+
+#carouselExampleIndicators .carousel-inner .item img {
     width: 100%;
     height: 100% !important;
     object-fit: cover;
 }
 
-.carousel-inner .item img {
-    width: 100%;
-    height: 100% !important;
-    object-fit: cover;
-}
-
-@media screen and (max-width: 1680px){
-.banner-content {
-    width:70%;
-}}
 
 
-.carousel-content {
+
+#carouselExampleIndicators .carousel-content {
     position: absolute;
-    top: 11%;
-    bottom: 20%;
-    left: 18%;
-    right: 20%;
+    top: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 100%;
+    top: 1%;
+    bottom: 39%;
+    left: 3%;
+    right: 3%;
+    width: 100%;
+    /* text-align: center;
+    position: absolute;
+   
     z-index: 20;
     color: white;
-    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    text-shadow: 0 1px 2px rgba(0,0,0,.6); */
 }
 
-@media screen and (max-width: 1543px){
-.banner-content {
-    padding-top: 22%;
-}}
+/* @media screen and (min-width: 1543px){
+#carouselExampleIndicators .banner-content {
+    padding-top: 10%;
+}} */
 
-.carousel-content h1{
-    font-size:60px;
+
+#carouselExampleIndicators .banner-content {
+    width: 95%;
+}
+
+#carouselExampleIndicators .banner-content h1{
+    font-size:40px;
     font-weight: 600;
     padding-bottom: 20px;
     padding-top: 20px;
 }
 
+#carouselExampleIndicators .banner-content h2{
+    font-size:30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
 
-.carousel-content h3{
+
+#carouselExampleIndicators .banner-content h3{
     color: yellow;
     font-weight: 600;
 }
 
-.banner-content p{
+#carouselExampleIndicators .banner-content p{
     font-size:17px;
     padding-top:15px;
-    line-height:19px;
-    padding-bottom:15px;
+    line-height:25px;
+    padding-bottom:25px;
+} 
+
+#carouselExampleIndicators .banner-content button{
+    color: white;
+    background-color: blueviolet;
+    box-shadow: cornflowerblue;
+    border-color: white;
+
+} 
+
+#carouselExampleIndicators .banner-content button:hover{
+    color: blueviolet;
+    background-color: white;
+    box-shadow: cornflowerblue;
+    border-color: blueviolet;
+    
 } 
 
 
 
 
-.carousel-item {
+#carouselExampleIndicators .carousel-item {
     height: 100vh;
     min-height: 350px;
     background: no-repeat center center scroll;
@@ -288,7 +300,103 @@ line-height:30px;
 
 
 
+
+
+
+  
+
+
 /* ----------Header Ends Here ---------- */
+
+
+/* games section */
+.games{
+    background-color: black;
+    padding:150px 0 180px 0;
+    font-family: "Abel-Regular";
+    color: white;
+}
+
+#games h2{
+    padding: 20px;
+    font-size: 50px;
+    font-weight: 1800;
+}
+
+#games h1{
+    font-size: 21px;
+}
+
+#games h3{
+    padding:15px 0;
+    font-size:38px;
+    font-family: "Abel-Regular";
+    font-weight:800;
+}
+    
+#games span{
+    color:red;
+}
+
+#games h4{
+    font-size:20px;
+    line-height:30px;
+}
+
+
+
+@media (max-width: 768px) {
+    #games .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    #games .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+#games .carousel-inner .carousel-item.active,
+#games .carousel-inner .carousel-item-next,
+#games .carousel-inner .carousel-item-prev {
+    padding: 2px;
+    display: flex;
+} 
+/* display 3 */
+@media (min-width: 768px) {
+    
+    #games .carousel-inner .carousel-item-right.active,
+    #games .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    #games .carousel-inner .carousel-item-left.active, 
+    #games .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+#games .carousel-inner .carousel-item-right,
+#games .carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+#games .card{
+    padding: 0rem;
+    background-color: black;
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1500px;
+}
+
+
+
+
+/* games ends */
+
+
+
+
+
 
 /* ----------About---------- */
 
@@ -364,8 +472,8 @@ left: auto;
 
 /* ---------- About Ends here ---------- */
 
-/* ---------- Requirements Starts ---------- */
-.requirement{
+/* ---------- connect Starts ---------- */
+.connect{
 background:url("../images/require.jpg" ) 0px 0px no-repeat;
 width:100%;
 background-size:cover;
@@ -373,12 +481,13 @@ font-family: "Abel-Regular";
 }
 
 .all-require{
-padding:150px 0;
+padding:180px 0;
 }
+
 
 .heading{
 margin:0 auto;
-padding-bottom:50px;
+padding-bottom:30px;
 color:#fff;
 }
 
@@ -393,6 +502,37 @@ color:#f7de29;
 .heading span{
 color:#cfd5f7;
 }
+
+.connect-content p{
+    padding-bottom: 9%;
+   color:#cfd5f7;
+   font-size:28px;
+}
+
+.links{
+    align-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    
+    
+}
+
+
+.links button{
+    color: white;
+    background-color: blueviolet;
+    box-shadow: cornflowerblue;
+    border-color: white;
+}
+
+.links button:hover{
+    color: blueviolet;
+    background-color: white;
+    box-shadow: cornflowerblue;
+    border-color: blueviolet;
+}
+
+
 
 .grid{
 background:rgba(41, 40, 40, 0.7);
@@ -442,7 +582,151 @@ padding-top:30px;
 font-size:16px;
 color:rgba(239, 239, 243, 0.83);
 }
-/* ---------- Requirements Ends here ---------- */
+/* ---------connect Ends here ---------- */
+
+
+
+
+
+
+
+
+
+
+/* ---------------teams starts here------- */
+
+.teams{
+    background-color: black;
+    padding:50px 0 100px 0;
+    font-family: "Abel-Regular";
+    color: white;
+}
+
+#teams h2{
+    padding: 20px;
+    font-size: 50px;
+    font-weight: 1800;
+}
+
+#teams h1{
+    font-size: 25px;
+    font-weight: 700;
+    padding:5px 0 20px 0;
+}
+
+#teams h3{
+    padding:10px 0;
+    font-size:38px;
+    font-family: "Abel-Regular";
+    font-weight:800;
+}
+    
+#teams span{
+    color:red;
+}
+
+#teams h4{
+    padding:20px;
+    font-size:20px;
+    line-height:30px;
+}
+
+#teams p{
+    font-size:20px;
+    line-height:30px;
+    padding-bottom: 10px;
+}
+
+#teams button{
+    color: white;
+    background-color: #490d49;
+    box-shadow: cornflowerblue;
+    border-color: white;
+
+} 
+
+#teams button:hover{
+    color: #490d49;
+    background-color: white;
+    box-shadow: cornflowerblue;
+    border-color: #490d49;
+    
+} 
+
+
+#teams .card-body{
+    word-wrap: break-word;
+    position: absolute;
+    background-color: transparent;
+    padding: 5%;
+    color: white;
+}
+
+
+/* Prevent image stretching is it's resized */
+#teams .card-img-top {
+    opacity: 0.3;
+    object-fit: cover;
+}
+
+/* Make all cards in row the same height */
+#teams .row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+#teams .row > div[class*='col-'] {
+  display: flex;
+}
+
+/* Hover effects */
+#teams .card {
+    max-width: 100%;
+  background-color: #490d49;
+  transition: -webkit-transform 0.3s ease;
+}
+#teams .card:hover {
+  transform: scale(1.01, 1.01);
+}
+
+/* Responsive design for image heights */
+@media (max-width: 664px) { 
+    #teams .card-img-top {
+      height: 95vw;
+    }
+  }
+
+@media (min-width: 576px) { 
+  #teams .card-img-top {
+    height: 43vw;
+  }
+}
+
+@media (min-width: 931px) { 
+  #teams .card-img-top {
+    height: 32vw;
+  }
+}
+
+@media (min-width: 1070px) { 
+  #teams .card-img-top {
+    height: 27vw;
+  }
+}
+
+@media (min-width: 1330px) { 
+  #teams .card-img-top {
+    height: 17vw;
+  }
+}
+
+
+
+
+
+
+
+
 
 /* ---------- UP Coming Games Starts Here ---------- */
 .background {
