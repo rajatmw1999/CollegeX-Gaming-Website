@@ -14,6 +14,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
@@ -39,7 +40,7 @@
 		<div class="container">
 			<!-- logo -->
 			<a class="site-logo" href="index.html">
-				<img src="img/logo.png" alt="">
+				<img src="img/voltnoc.png" height="70" width="140" alt="">
 			</a>
 			<div class="user-panel">
 				<a class="social-buttons" href="http://www.facebook.com/profile.php?id=">
@@ -65,11 +66,12 @@
 			<!-- site menu -->
 			<nav class="main-menu">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="review.html">Games</a></li>
-					<li><a href="categories.html">Blog</a></li>
-					<li><a href="community.html">Forums</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li class="nav-item active"><a href="#home" class="scroll nav-link active">Home</a></li>
+					<li class="nav-item"><a href="#games" class="scroll nav-link">Games</a></li>
+					<li class="nav-item"><a href="#tournaments" class="scroll nav-link">Tournaments</a></li>
+					<li class="nav-item"><a href="#team" class="scroll nav-link">Team</a></li>
+					<li class="nav-item"><a href="#about" class="scroll nav-link">About </a></li>
+					<li class="nav-item"><a href="#contact" class="scroll nav-link">Contact </a></li>
 				</ul>
 			</nav>
 		</div>
@@ -78,23 +80,36 @@
 
 
 	<!-- Hero section -->
-	<section class="hero-section">
+	<section id="home" class="hero-section">
 		<div class="hero-slider owl-carousel">
 			<div class="hs-item set-bg" data-setbg="img/slider-1.jpg">
 				<div class="hs-text">
 					<div class="container">
-						<h2>The Best <span>Games</span> Out There</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada <br> lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. <br>Suspendisse cursus faucibus finibus.</p>
-						<a href="#" class="site-btn">Read More</a>
+						<p id="slider-text">INDIA’S FIRST EVER PLATFORM PROVIDING STUDENTS A CAREER IN ESPORTS</p>
+						<h2 id="slider-heading">Voltfraction <span>Gaming</span></h2>
+						
+						<p id="slider-text">There are millions of gamers across the country who want to take the plunge and make big name and fame in Esports. <br> Here’s the once in a lifetime opportunity to make theirdream come true!</p>
+						<!-- <a href="#" class="site-btn">Read More</a> -->
 					</div>
 				</div>
 			</div>
 			<div class="hs-item set-bg" data-setbg="img/slider-2.jpg">
 				<div class="hs-text">
 					<div class="container">
-						<h2>The Best <span>Games</span> Out There</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada <br> lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. <br>Suspendisse cursus faucibus finibus.</p>
-						<a href="#" class="site-btn">Read More</a>
+						<h2 id="slider-heading">VoltFraction <span>College Club </span></h2>
+						<p id="slider-text">(SCHOOL CLUBS COMING SOON)</p>
+						<p id="slider-text">Here’s your chance to lead the gaming revolution in your college.  <br> Set-up club in your campus, recruit a team of top tier talent and the war is on!  <br>(P.S Heads and Official seasons team will earn monthly salaries.)</p>
+						<a href="#" class="site-btn">Click Here</a>
+					</div>
+				</div>
+			</div>
+			<div class="hs-item set-bg" data-setbg="img/slider-2.jpg">
+				<div class="hs-text">
+					<div class="container">
+						<h2 id="slider-heading">VoltFraction <span>Gaming Community</span> </h2>
+						<p id="slider-text">(Free Beta Access to the Mentorship Programme, Monthly Giveaways, Tournament Discounts,<br> Rewards and much more for active members) </p>
+						<p id="slider-text">Be a part of one of the most interactive gaming community in the country.  <br> In the end, it’s the likeminded people in your life who’ll help you grow. <br>Connect with passionate gamers from around the globe and make your new social circle!</p>
+						<!-- <a href="#" class="site-btn">Read More</a> -->
 					</div>
 				</div>
 			</div>
@@ -172,6 +187,7 @@
 
 <!-- club section ends -->
 
+<h1 id="vf-daily-heading">VF <span>Daily Challenge</span></h1>
 
 	<!-- Feature section -->
 	<section class="feature-section spad feature-section-color">
@@ -248,20 +264,24 @@
 	
 <div class="gaming-video-wrap">
 	<div class="video">
-		<video width="1520" height="857" playsinline autoplay muted loop>
+		<video width="1520" height="757" playsinline autoplay muted loop>
 			<source src="img/videoplayback.mp4" type="video/mp4">
 			<!-- <source src="movie.ogg" type="video/ogg"> -->
 			Your browser does not support the video tag.
 		  </video>	
 	</div>
 	<!-- <div class="stack-top"></div> -->
-	<!-- <div class="stack-top-text">
-		<span id="heading">VoltFraction <span id="heading-white">Gaming Community</span></span>
+	<div class="stack-top-text">
+		<span id="heading">VoltFraction <span id="heading-white" style="color:#ffb320;">Gaming Community</span></span>
 		<br>
-		<span id="desc">Be a part of one of the most interactive gaming community in the country. </span><br>
-		<span id="desc">In the end, it’s the likeminded people in your life who’ll help you grow.  </span><br>
-		<span id="desc">Connect with passionate gamers from around the globe and make your new social circle!</span>
-	</div> -->
+		<span id="desc">Be a part of one of the most interactive gaming community in the country.In the end, it’s the likeminded people in your life who’ll help you grow.
+			Connect with passionate gamers from around the globe and make your new social circle!	 </span>
+	    <span id="desc" class="d-none d-xl-block">(Free Beta Access to the Mentorship Programme, Monthly Giveaways, Tournament Discounts, Rewards and much more for active members) </span>
+		<br><a href="#" class="site-btn">Discord <i class="fa fa-discord" aria-hidden="true"></i></a>
+		<!-- <span id="desc">  </span><br>
+		<span id="desc">Connect with passionate gamers from around the globe and make your new social circle!</span> -->
+	</div>
+
 	
 </div>
 
@@ -405,7 +425,7 @@
         </section>
 		<!-- about_us part end-->
 		<!-- notification section -->
-	<section class="notification">
+	<section class="notification" id="team">
 
 		<canvas id='beerCanvas'></canvas>
 		<div class="coming_content">
@@ -452,7 +472,7 @@
 	</section>
 	<!-- notification section ends -->
 	 <!-- pricing part start-->
-	 <section class="pricing_part padding_top" style="background-image: url('img/event_bg.png'); background-repeat: no-repeat;">
+	 <section id="tournaments" class="pricing_part padding_top" style="background-image: url('img/event_bg.png'); background-repeat: no-repeat;">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-3">
@@ -521,15 +541,15 @@
 
 
 	<!-- Review section -->
-	<section class="review-section spad set-bg" data-setbg="img/review-bg.png">
+	<section id="games" class="review-section spad set-bg" data-setbg="img/review-bg.png">
 		<div class="container">
 			<div class="section-title">
 				<div class="cata new">new</div>
 				<h2 id="heading">Recent Games</h2>
 			</div>
 			<div class="row">
-				<div class="col-lg-3 col-md-6">
-					<div class="review-item">
+				<div class="col-lg-3 col-md-6 games">
+					<div class="review-item ">
 						<div class="review-cover set-bg" data-setbg="img/review/1.jpg">
 							<div class="score yellow">9.3</div>
 						</div>
@@ -539,7 +559,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6">
+				<div class="col-lg-3 col-md-6 games">
 					<div class="review-item">
 						<div class="review-cover set-bg" data-setbg="img/review/2.jpg">
 							<div class="score purple">9.5</div>
@@ -550,7 +570,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6">
+				<div class="col-lg-3 col-md-6 games">
 					<div class="review-item">
 						<div class="review-cover set-bg" data-setbg="img/review/3.jpg">
 							<div class="score green">9.1</div>
@@ -561,9 +581,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img/review/4.jpg">
+				<div class="col-lg-3 col-md-6 games">
+					<div class="review-item  ">
+						<div class="review-cover set-bg " data-setbg="img/review/4.jpg">
 							<div class="score pink">9.7</div>
 						</div>
 						<div class="review-text">
@@ -578,7 +598,154 @@
 	<!-- Review section end -->
 
 	
+<!-- OUR TEAM SECTION BEGINS -->
+<h1 id="our-team-heading">Team <span>Behind Voltfraction</span></h1>
 
+<div id="team-section">
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="img/authors/1.jpg">
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Williamson</h3>
+                    <span class="post">Web Developer</span>
+                </div>
+            </div>
+		</div>
+		<div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="img/authors/1.jpg">
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Williamson</h3>
+                    <span class="post">Web Developer</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="img/authors/2.jpg">
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Kristiana</h3>
+                    <span class="post">Web Designer</span>
+                </div>
+            </div>
+        </div>
+      <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="img/authors/3.jpg">
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Kristiana</h3>
+                    <span class="post">Web Designer</span>
+                </div>
+            </div>
+        </div>
+	</div>
+	<div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="img/authors/1.jpg">
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Williamson</h3>
+                    <span class="post">Web Developer</span>
+                </div>
+            </div>
+		</div>
+		<div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="img/authors/1.jpg">
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Williamson</h3>
+                    <span class="post">Web Developer</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="img/authors/2.jpg">
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Kristiana</h3>
+                    <span class="post">Web Designer</span>
+                </div>
+            </div>
+        </div>
+      <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="img/authors/3.jpg">
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Kristiana</h3>
+                    <span class="post">Web Designer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- OUR TEAM SECTION ENDS -->
 
 
 	<!-- Footer top section -->
@@ -590,7 +757,7 @@
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="footer-logo text-white">
-						<img src="img/footer-logo.png" alt="">
+						<img src="img/voltnoc.png" height="100" width="160" alt="">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
 					</div>
 				</div>
@@ -665,16 +832,20 @@
 	</section>
 	<!-- Footer top section end -->
 
+
+
+
 	
 	<!-- Footer section -->
-	<footer class="footer-section">
+	<footer class="footer-section" id="contact">
 		<div class="container">
 			<ul class="footer-menu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="review.html">Games</a></li>
-				<li><a href="categories.html">Blog</a></li>
-				<li><a href="community.html">Forums</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				    <li class="nav-item active"><a href="#home" class="scroll nav-link active">Home</a></li>
+					<li class="nav-item"><a href="#games" class="scroll nav-link">Games</a></li>
+					<li class="nav-item"><a href="#tournaments" class="scroll nav-link">Tournaments</a></li>
+					<li class="nav-item"><a href="#team" class="scroll nav-link">Team</a></li>
+					<li class="nav-item"><a href="#about" class="scroll nav-link">About </a></li>
+					<li class="nav-item"><a href="#contact" class="scroll nav-link">Contact </a></li>
 			</ul>
 			<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
