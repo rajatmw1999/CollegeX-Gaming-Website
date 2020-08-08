@@ -9,6 +9,11 @@
 /* Template default CSS
 /*---------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
 html,
 body {
 	width: 100%;
@@ -16,6 +21,10 @@ body {
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
+	font-family: 'Bree Serif', serif;
+	letter-spacing: 0.4px;
+	word-spacing: 1px;
+	font-weight: 10;
 	/* font-smoothing: antialiased; */
 }
 
@@ -93,8 +102,9 @@ ol {
 }
 
 .section-title h2 {
+	font-family: 'Bree Serif', serif;
 	padding-top: 10px;
-	font-size: 36px;
+	font-size: 45px;
 }
 
 .set-bg {
@@ -104,6 +114,8 @@ ol {
 }
 
 .spad {
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
 	padding-top: 70px;
 	padding-bottom: 97px;
 }
@@ -884,6 +896,8 @@ font-size: 16px;
 ------------------------*/
 
 .footer-section {
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
 	padding: 18px 0 16px;
 	overflow: hidden;
 	background: #252525;
@@ -1515,6 +1529,8 @@ font-size: 16px;
 		display: none;
 	}
 	.footer-section {
+		font-family: 'Roboto', sans-serif;
+		-webkit-font-smoothing: antialiased;
 		padding: 30px 0 20px;
 		text-align: center;
 	}
@@ -2193,7 +2209,7 @@ padding-bottom: 24%;
 
 .review-section #game-name{
 	color:purple;
-	text-decoration: underline;
+	/* text-decoration: underline; */
 }
 
 .review-section #game-desc{
@@ -2555,7 +2571,7 @@ padding-bottom: 24%;
   
   /* line 10, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_about_us.scss */
   .about_us .about_us_text h2 {
-	font-size: 38px;
+	font-size: 2.9rem;
 	font-weight: 500;
 	line-height: 55px;
 	margin-bottom: 8px;
@@ -2565,7 +2581,7 @@ padding-bottom: 24%;
   @media (max-width: 576px) {
 	/* line 10, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_about_us.scss */
 	.about_us .about_us_text h2 {
-	  font-size: 24px;
+	  font-size: 31px;
 	  margin-bottom: 10px;
 	  line-height: 35px;
 	}
@@ -2574,7 +2590,7 @@ padding-bottom: 24%;
   @media only screen and (min-width: 576px) and (max-width: 767px) {
 	/* line 10, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_about_us.scss */
 	.about_us .about_us_text h2 {
-	  font-size: 25px;
+	  font-size: 27px;
 	  margin-bottom: 10px;
 	  line-height: 35px;
 	}
@@ -2583,7 +2599,7 @@ padding-bottom: 24%;
   @media only screen and (min-width: 768px) and (max-width: 991px) {
 	/* line 10, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_about_us.scss */
 	.about_us .about_us_text h2 {
-	  font-size: 25px;
+	  font-size: 27px;
 	  margin-bottom: 10px;
 	  line-height: 35px;
 	}
@@ -2709,8 +2725,7 @@ padding-bottom: 24%;
   
 
   #mentorship-heading{
-	font-family: 'Aclonica', sans-serif;
-
+	font-family: 'Bree Serif', serif;
 	color:white;
   }
 
@@ -3195,9 +3210,9 @@ padding-bottom: 24%;
     transition: all 0.3s ease 0s;
 }
 .our-team .social li a:hover:after{ transform: rotate(180deg); }
-.our-team .team-content{ padding: 12px; }
+.our-team .team-content{ 	font-family: 'Roboto', sans-serif; padding: 0px; }
 .our-team .title{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     letter-spacing: 2px;
     color: #047168;
@@ -3242,10 +3257,10 @@ padding-bottom: 24%;
 }
 }
 #our-team-heading{
-	font-family: 'Aclonica', sans-serif;
+	font-family: 'Bree Serif', serif;
 	color:white;
 	text-align: center;
-	font-size:2.7rem;
+	font-size:2.9rem;
 	padding-bottom:1rem;
 }
 
@@ -4297,11 +4312,11 @@ padding-bottom: 24%;
  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&display=swap');
   
   #carouselExampleIndicators .banner-content h1{
-	font-family: 'Aclonica', sans-serif;
+	
 	  color: white;
 	  padding-top: 10px;
-	  font-weight: 400;
-	font-size: 50px;
+	  font-weight: 100;
+	font-size: 60px;
 	  padding-bottom: 20px;
 	  
   }
@@ -4312,7 +4327,7 @@ padding-bottom: 24%;
 	  color: white;
 	  padding-top: 10px;
 	  font-weight: 400;
-	font-size: 30px;
+	font-size: 2.2rem;
   }
   }
 
@@ -4320,7 +4335,7 @@ padding-bottom: 24%;
 
 @media (max-width: 320px){
 #carouselExampleIndicators .banner-content h1 {
-    font-family: 'Aclonica', sans-serif;
+   
     color: white;
     padding-top: 10px;
     font-weight: 400;
@@ -5034,16 +5049,20 @@ padding-bottom: 24%;
 
 /* about page */
 main.container.b-offset {
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
 	margin-bottom: 30px;
 	margin-top: 80px;
 }
 
 main.b-offset {
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
     min-height: 71vh;
 }
 
 .page-title.jsx-917417991 {
-	color: white;
+	color: whitesmoke;
     padding-top: 35px;
     font-size: 1.75rem;
     font-weight: 800;
@@ -5058,7 +5077,7 @@ main.b-offset {
 
 .jsx-917417991{
 	font-size: 1rem;
-	color:white
+	color:darkgray
 }
   
 
@@ -5066,7 +5085,7 @@ main.b-offset {
 @media (max-width:600px){
 .jsx-917417991 {
     font-size: 0.7rem;
-    color: white;
+    color:darkgray;
 }}
 
 
@@ -5436,6 +5455,66 @@ main.b-offset {
 	}
 } */
 
+@media (max-width:1401px){
+
+
+	.our-team .title {
+		font-size: 18px;
+		font-weight: 700;
+		letter-spacing: 2px;
+		color: #047168;
+		text-transform: uppercase;
+		margin-bottom: 7px;
+	}
+}
+
+
+
+@media (max-width:1294px){
+
+
+	.our-team .title {
+		font-size: 16px;
+		font-weight: 1700;
+		letter-spacing: 2px;
+		color: #047168;
+		text-transform: uppercase;
+		margin-bottom: 7px;
+	}
+}
+
+@media (max-width:1190px){
+
+
+	.our-team .title {
+		font-size: 14px;
+		font-weight: 1500;
+		letter-spacing: 2px;
+		color: #047168;
+		text-transform: uppercase;
+		margin-bottom: 7px;
+	}
+}
+@media (max-width:1093px){
+
+
+	.our-team .title {
+		font-size: 12px;
+		font-weight: 1700;
+		letter-spacing: 2px;
+		color: #047168;
+		text-transform: uppercase;
+		margin-bottom: 7px;
+	}
+	.our-team .post {
+		display: block;
+		font-size: 13px;
+		font-weight: 600;
+		color: #707070;
+		text-transform: capitalize;
+	}
+}
+
 @media (max-width:1005px){
 	.in{
 		max-width: 28%;
@@ -5443,7 +5522,7 @@ main.b-offset {
 
 	.our-team .title {
 		font-size: 17px;
-		font-weight: 700;
+		font-weight: 1700;
 		letter-spacing: 2px;
 		color: #047168;
 		text-transform: uppercase;
@@ -5453,6 +5532,52 @@ main.b-offset {
 	.our-team .post {
 		display: block;
 		font-size: 15px;
+		font-weight: 600;
+		color: #707070;
+		text-transform: capitalize;
+	}
+}
+
+@media (max-width:945px){
+	.in{
+		max-width: 28%;
+	}
+
+	.our-team .title {
+		font-size: 14px;
+		font-weight: 1700;
+		letter-spacing: 2px;
+		color: #047168;
+		text-transform: uppercase;
+		margin-bottom: 7px;
+	}
+
+	.our-team .post {
+		display: block;
+		font-size: 15px;
+		font-weight: 600;
+		color: #707070;
+		text-transform: capitalize;
+	}
+}
+
+@media (max-width:830px){
+	.in{
+		max-width: 28%;
+	}
+
+	.our-team .title {
+		font-size: 13px;
+		font-weight: 1000;
+		letter-spacing: 2px;
+		color: #047168;
+		text-transform: uppercase;
+		margin-bottom: 7px;
+	}
+
+	.our-team .post {
+		display: block;
+		font-size: 14px;
 		font-weight: 600;
 		color: #707070;
 		text-transform: capitalize;
