@@ -3,20 +3,40 @@
 <head>
 	<meta charset="UTF-8">
     <title>collegefind</title>
-    
     <link rel="stylesheet" href="styles.css" />
-	
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <div class="container-contact100 align-center">
-        <form class="contact100-form validate-form" action="https://collegx-campus-crud.herokuapp.com/collegeFind" method="POST">
-            <label class="label-input100" for="college">College Name</label>
+        <form class="contact100-form validate-form">
+            <label class="label-input100" for="college">Search VoltFraction Club in your College</label>
             <input class="input100" type="text" name="collegeName" id="college" placeholder="college name" autocomplete="off" style="text-transform: lowercase;">
-            <button class="contact100-form-btn" type="submit">Search</button>
+            <a class="contact100-form-btn"  onclick={sendData()}>Search</a>
+            <a style="margin-left:10px;" class="contact100-form-btn" href="newcollege.html">Register College</a>
         </form>
     </div>
 
-
+<script>
+    async function sendData(){
+        var collegeName = $("#college").val();
+        if(collegeName){
+        console.log(collegeName);
+        // alert(collegeName);
+        var data= {
+            "collegeName":collegeName
+        }
+    $.post( "https://collegx-campus-crud.herokuapp.com/collegeFind",data)
+  .done(function( datar ) {
+    alert("There is already a voltfraction club in your college. Stay tuned for updates!")
+  })
+  .fail(function(err){
+      if(err.status == 404)
+      alert("Your college is not registered yet! Register Below!");
+    console.log(err);
+  });
+}
+}
+</script>
 </body>
 </html>

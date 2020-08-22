@@ -2,6 +2,9 @@
     font-family: Poppins-Regular;
     src: url('../fonts/poppins/Poppins-Regular.ttf'); 
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body{
     padding: 0;

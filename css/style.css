@@ -14,6 +14,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
+@font-face{
+	font-family: "Moltorv";
+	src:url(../fonts/7thservice.ttf);
+}
+	
+
 html,
 body {
 	width: 100%;
@@ -702,16 +708,17 @@ font-size: 16px;
 .review-item .review-cover {
 	position: relative;
 	margin-bottom: 30px;
-	height: 345px;
+	height: 390px;
 }
 
 
 .review-item .review-cover .score {
+	display: none;
 	position: absolute;
 	width: 54px;
 	height: 54px;
-	top: -27px;
-	left: 26px;
+    top: -14px;
+    left: 11px;
 	padding-top: 15px;
 	font-size: 18px;
 	font-weight: 500;
@@ -2208,7 +2215,7 @@ padding-bottom: 24%;
 }
 
 .review-section #game-name{
-	color:purple;
+	color:#ffb320;
 	/* text-decoration: underline; */
 }
 
@@ -3160,7 +3167,7 @@ padding-bottom: 24%;
     transition: all 0.5s ease 0s;
 }
 .our-team .pic:after{
-    background: rgba(8,75,77,0.8);
+    background: rgba(121, 57, 129, 0.651);
     top: auto;
     left: auto;
     bottom: -100%;
@@ -3201,7 +3208,7 @@ padding-bottom: 24%;
     content: "";
     width: 100%;
     height: 100%;
-    background: #db162f;
+    background: #0072b1;
     border-radius: 0 20px 20px 20px;
     position: absolute;
     top: 0;
@@ -3215,15 +3222,15 @@ padding-bottom: 24%;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: #047168;
+    color: #ffb320;
     text-transform: uppercase;
     margin-bottom: 7px;
 }
 .our-team .post{
     display: block;
     font-size: 17px;
-    font-weight: 600;
-    color: #707070;
+    font-weight: 100;
+    color: #fff;
     text-transform: capitalize;
 }
 @media only screen and (max-width: 990px){
@@ -5077,7 +5084,7 @@ main.b-offset {
 
 .jsx-917417991{
 	font-size: 1rem;
-	color:darkgray
+	color:rgb(236, 223, 223)
 }
   
 
@@ -5462,7 +5469,7 @@ main.b-offset {
 		font-size: 18px;
 		font-weight: 700;
 		letter-spacing: 2px;
-		color: #047168;
+		color: #ffb320;
 		text-transform: uppercase;
 		margin-bottom: 7px;
 	}
@@ -5477,7 +5484,7 @@ main.b-offset {
 		font-size: 16px;
 		font-weight: 1700;
 		letter-spacing: 2px;
-		color: #047168;
+		color: #ffb320;
 		text-transform: uppercase;
 		margin-bottom: 7px;
 	}
@@ -5490,7 +5497,7 @@ main.b-offset {
 		font-size: 14px;
 		font-weight: 1500;
 		letter-spacing: 2px;
-		color: #047168;
+		color: #ffb320;
 		text-transform: uppercase;
 		margin-bottom: 7px;
 	}
@@ -5502,15 +5509,15 @@ main.b-offset {
 		font-size: 12px;
 		font-weight: 1700;
 		letter-spacing: 2px;
-		color: #047168;
+		color: #ffb320;
 		text-transform: uppercase;
 		margin-bottom: 7px;
 	}
 	.our-team .post {
 		display: block;
 		font-size: 13px;
-		font-weight: 600;
-		color: #707070;
+		font-weight: 100;
+		color: #fff;
 		text-transform: capitalize;
 	}
 }
@@ -5524,7 +5531,7 @@ main.b-offset {
 		font-size: 17px;
 		font-weight: 1700;
 		letter-spacing: 2px;
-		color: #047168;
+		color: #ffb320;
 		text-transform: uppercase;
 		margin-bottom: 7px;
 	}
@@ -5532,8 +5539,8 @@ main.b-offset {
 	.our-team .post {
 		display: block;
 		font-size: 15px;
-		font-weight: 600;
-		color: #707070;
+		font-weight:100;
+		color: #fff;
 		text-transform: capitalize;
 	}
 }
@@ -5547,7 +5554,7 @@ main.b-offset {
 		font-size: 14px;
 		font-weight: 1700;
 		letter-spacing: 2px;
-		color: #047168;
+		color: #ffb320;
 		text-transform: uppercase;
 		margin-bottom: 7px;
 	}
@@ -5555,8 +5562,8 @@ main.b-offset {
 	.our-team .post {
 		display: block;
 		font-size: 15px;
-		font-weight: 600;
-		color: #707070;
+		font-weight: 100;
+		color: #fff;
 		text-transform: capitalize;
 	}
 }
@@ -5570,7 +5577,7 @@ main.b-offset {
 		font-size: 13px;
 		font-weight: 1000;
 		letter-spacing: 2px;
-		color: #047168;
+		color: #ffb320;
 		text-transform: uppercase;
 		margin-bottom: 7px;
 	}
@@ -5578,8 +5585,8 @@ main.b-offset {
 	.our-team .post {
 		display: block;
 		font-size: 14px;
-		font-weight: 600;
-		color: #707070;
+		font-weight: 100;
+		color: #fff;
 		text-transform: capitalize;
 	}
 }
@@ -5593,7 +5600,7 @@ main.b-offset {
 		font-size: 22px;
 		font-weight: 700;
 		letter-spacing: 2px;
-		color: #047168;
+		color: #ffb320;
 		text-transform: uppercase;
 		margin-bottom: 7px;
 	}
@@ -5601,7 +5608,7 @@ main.b-offset {
 		display: block;
 		font-size: 17px;
 		font-weight: 600;
-		color: #707070;
+		color: #fff;
 		text-transform: capitalize;
 	}
 }
@@ -5615,3 +5622,61 @@ main.b-offset {
 .collapse:not(.show) {
     display: none;
 }
+
+
+.shadow {
+	-moz-box-shadow:    3px 3px 5px 6px #ccc;
+	-webkit-box-shadow: 3px 3px 5px 6px #ccc;
+	box-shadow:         3px 3px 5px 6px #ccc;
+  }
+
+
+
+
+
+
+
+
+
+
+  .search {
+	width: 100%;
+	position: relative;
+	display: flex;
+  }
+  
+  .searchTerm {
+	width: 100%;
+	border: 3px solid #66a5e7;
+	border-right: none;
+	padding: 15px;
+	height: 20px;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+	color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+	color: black;
+  }
+  
+  .searchButton {
+	width: 40px;
+	height: 36px;
+	border: 1px solid #66a5e7;
+	background:#66a5e7;
+	text-align: center;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+	width: 30%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
